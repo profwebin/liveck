@@ -15,7 +15,47 @@
             flex-direction: column;
             min-height: 100vh;
         }
+        /* Social media */
+ .channel-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
 
+        .channel-buttons a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .channel-buttons a.whatsapp {
+            background-color: #25D366;
+        }
+
+        .channel-buttons a.telegram {
+            background-color: #0088cc;
+        }
+
+        .channel-buttons a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .channel-buttons a img {
+            width: 24px;
+            height: 24px;
+        }
         /* Header styles */
         .header {
             background-color: #1f2937;
@@ -252,6 +292,16 @@
             </nav>
         </div>
     </header>
+    <div class="channel-buttons">
+        <a href="#" class="whatsapp">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp Icon">
+            Join WhatsApp Channel
+        </a>
+        <a href="#" class="telegram">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="Telegram Icon">
+            Join Telegram Channel
+        </a>
+    </div>
 <main>
          <div class="match-container">
         <a href="https://example.com/match-details" target="_blank">
